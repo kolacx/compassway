@@ -1,0 +1,9 @@
+services:
+  backend:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    image: compassway/backend
+    command: python manage.py test
+    ports:
+      - 8000:8000
